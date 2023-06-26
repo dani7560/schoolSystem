@@ -1,0 +1,115 @@
+
+
+body{
+  margin: 0;
+  padding: 0;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+  
+  }
+  
+ 
+  .colorShape{
+    margin-bottom: 10px;
+    position: relative;
+    margin: -2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   
+    transform: rotate(-15deg) translate(-2.5rem,-3rem);
+
+
+
+
+    
+
+  }
+  .colorShape::before{
+    border-radius: 50%;
+    position: absolute;
+    content: '';
+  /* transform: translate(0px,0px); */
+    width: 15rem;
+    height: 15rem;
+    background-color:blue ;
+
+  }
+.colorShape::after{
+    border-radius: 50%;
+    position: absolute;
+    content: '';
+    display: block;
+  
+    width: 15rem;
+    background-color: blue;
+    height: 15rem;
+    transform: translate(150px,0px);
+    
+    rotate: 1 1 0 deg;
+}
+
+  
+  .nav ul {
+width: 45rem;
+    background-color: aliceblue;
+    padding: 0;
+    color: aqua;
+     
+    list-style: none;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    column-gap: 2rem;
+    height: 40px;
+
+
+  
+    
+  
+    align-items: center;
+  
+  }
+  .contactWay{
+    row-gap: -10px;
+    background-color: blue;
+  position: relative;
+  
+    }
+  .FaMessage{
+    height: 10px;
+
+  }
+  .TbMessage{
+    height: 10px;
+  }
+
+  @media all and (max-width:1000px){
+    .colorShape::before{
+      transform: translate(-2.5rem,0);
+      width: 12rem;
+      .nav ul {
+      width: 35rem;
+      }
+    }
+    .colorShape::after{
+      width: 12rem;
+      transform: translate(-2.5rem,0);
+      margin-top: -10px;
+    }
+  }
+  @media all and (max-width:500px){
+    .colorShape::before{
+      width: 10rem;
+    }
+    .colorShape::after{
+      width: 10rem;
+    }
+  }
+

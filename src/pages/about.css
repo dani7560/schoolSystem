@@ -1,0 +1,159 @@
+*{
+
+margin: 0px;
+}
+.habout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: blue;
+    text-align: center;
+
+    
+}
+.hbutton{
+    text-align: center;
+    background-color: blue;
+    border: none;
+    
+}
+.aboutevent{
+    
+margin-bottom: 15px;
+    background-color: aliceblue;
+    position: relative;
+    height:20rem;
+    
+}
+h1{
+    margin-left: 15px;
+}
+.eventLayout{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.eImage{
+    float: left;
+}
+.schoolAct{
+    background-color: blue;
+    color: white;
+    width: 15rem;
+text-transform: capitalize;
+
+
+}
+.eventTime{
+    
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.eventTime .Show{
+    opacity: 1;
+
+}
+.eventTime .notShow{
+    opacity: 0;
+    
+}
+
+.event1{width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    text-align: center;
+    color: red;
+    gap: 10px 10px;
+    background-color: white;
+    margin: 10px;
+}
+.event2{  height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    text-align: center;
+    color: red;
+    gap: 10px 10px;
+    background-color: white;
+    margin: 10px;
+}
+.event3{width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    text-align: center;
+    color: red;
+    gap: 10px 10px;
+    background-color: white;
+    margin: 10px;
+}
+.event4{width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    text-align: center;
+    color: red;
+    gap: 10px 10px;
+    background-color: white;
+    margin: 10px;
+}
+.calanderBtn{
+    background-color: blue;
+    border: none;
+    position: absolute;
+
+    width: 5rem;
+    height: 2rem;
+    border-radius: 5px;
+    left: 1.5rem;
+}
+.annualCalender{
+    margin-left: 10px;
+}
+.showBtn{
+   position: absolute;
+   right: 50px;
+   border: none;
+   bottom: 30px;
+   margin-left: 30;
+   background-color: aliceblue;
+    
+}
+.rowActivity{
+    background-color: floralwhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.Club{
+    display: flex;
+    flex-direction: row;
+}
+.clubimage{margin: 10px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+.mv{
+    
+   transform: translate(-3rem,3rem);
+}
+.Mission{margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+background-color: white;
+border-radius: 15px;
+color: blue;
+}
+.Vission{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+

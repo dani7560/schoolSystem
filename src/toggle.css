@@ -1,0 +1,14 @@
+body{display: flex;
+
+}
+.showAll{
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    right: 50px;
+    border: none;
+    bottom: 30px;
+    margin-left: 30;
+    background-color: aliceblue;
+     
+}
