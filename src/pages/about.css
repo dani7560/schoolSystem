@@ -1,34 +1,217 @@
-*{
 
-margin: 0px;
+.about{
+
+   display: flex;
+   flex-direction: column;
+    background-color: #f8f8f8;
+    padding: 8rem 0rem 0 0rem;
+  
 }
-.habout{
+.about .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr
+ 
+}
+.about .schoolImg{
+    position: relative;
     display: flex;
+    justify-content: center;
+    z-index: 1;
+    transform: translate(0,30px);
+}
+.about .col-2{
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    top: 00px;
     flex-direction: column;
     justify-content: center;
-    background-color: blue;
-    text-align: center;
-
+    align-items: center;
+    padding: 3rem;
     
 }
-.hbutton{
+.about .col-2 p:first-child{
+    font-size: 3rem;
+  
+}
+.about .aboutevent{
+background-color: white;
+margin: 5rem;
+}
+.about .aboutevent p:first-child{
+    text-transform: uppercase;
+    color: blue;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+.about .eventLayout{
+    display: flex;
+    justify-content: space-between;
+}
+.eventTime{
+    
+    display: flex;
+    flex-direction: column;
+}
+.eventRow1{
+    display: flex;
+    
+}
+.eventRow2{
+    display: flex;
+}
+.event1{width: 70px;
+    height: 70px;
+    border-radius: 10px;
     text-align: center;
+    color: red;
+    gap: 10px 10px;
+    background-color: white;
+    margin: 10px;
+}
+.event2{  height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    text-align: center;
+    color: red;
+    gap: 10px 10px;
+    background-color: white;
+    margin: 10px;
+}
+
+
+.event3{width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    text-align: center;
+    color: red;
+    gap: 10px 10px;
+    background-color: white;
+    margin: 10px;
+}
+.event4{width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    text-align: center;
+    color: red;
+    gap: 10px 10px;
+    background-color: white;
+    margin: 10px;
+}
+.showBtn{
+    border: none;
+    bottom: 30px;
+    margin-left: 30;
+    background-color: aliceblue;
+     
+ }
+ .annualCalender{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px;
+}
+.about .calanderBtn{
     background-color: blue;
     border: none;
+    height: 2rem;
+    border-radius: 5px;
+    margin: 1rem;
+    text-transform: uppercase;
+    
+    
     
 }
-.aboutevent{
+.about .annualCalender div{
+    color: blue;
+    font-size: 1.5rem;
+}
+.about .SchoolActivity{
+    background-color: whitesmoke;
+}
+
+.about .SchoolActivity h1{
+
+background-color: blue;
+box-shadow: 3px 4px 5px rgb(0, 0,9);
+color: white;
+text-transform: uppercase;
+width: 30%;
+height: 68px;
+text-align: center;
+align-self: center;
+margin: 15px;
+}
+.about .rowActivity{
+    display: flex;
+}
+
+.about .columActivity1{
+    display: flex;
+    flex-direction: column;
+}
+.about .lstActivity p{
+text-transform: uppercase;
+color: blue;
+margin: 10px;
+}
+.about .Club{
+     display: flex;
+    flex-direction: row;
+}
+.about .schoolImg{
     
-margin-bottom: 15px;
-    background-color: aliceblue;
+}
+.about .readButton{
+    background-color: blue;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.about .clubimage{margin: 10px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    width: 10rem;
+    height: 10rem;
+}
+
+
+.mv{
     position: relative;
-    height:20rem;
-    
+    transform: translate(-3rem,3rem);
+    z-index: 1;
+ }
+ .Mission{margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+background-color: white;
+border-radius: 15px;
+color: blue;
 }
-h1{
-    margin-left: 15px;
+.Vission{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
-.eventLayout{
+
+
+
+
+
+
+
+
+/* .eventLayout{
     
     display: flex;
     flex-direction: row;
@@ -44,8 +227,8 @@ h1{
 text-transform: capitalize;
 
 
-}
-.eventTime{
+} */
+/* .eventTime{
     
     display: flex;
     flex-direction: row;
@@ -78,8 +261,8 @@ text-transform: capitalize;
     gap: 10px 10px;
     background-color: white;
     margin: 10px;
-}
-.event3{width: 70px;
+} */
+/* .event3{width: 70px;
     height: 70px;
     border-radius: 10px;
     text-align: center;
@@ -109,15 +292,24 @@ text-transform: capitalize;
 }
 .annualCalender{
     margin-left: 10px;
-}
-.showBtn{
+} */
+/* .showBtn{
    position: absolute;
+   
    right: 50px;
    border: none;
    bottom: 30px;
    margin-left: 30;
    background-color: aliceblue;
     
+}
+.lstEvent{
+    position: absolute;
+   right: 50px;
+   
+   bottom: 30px;
+   margin-left: 30;
+   background-color: aliceblue;
 }
 .rowActivity{
     background-color: floralwhite;
@@ -132,8 +324,8 @@ text-transform: capitalize;
 .clubimage{margin: 10px;
     background-color: whitesmoke;
     border-radius: 15px;
-}
-.mv{
+} */
+/* .mv{
     
    transform: translate(-3rem,3rem);
 }
@@ -156,4 +348,4 @@ color: blue;
     padding: 10px;
     margin-bottom: 10px;
 }
-
+ */

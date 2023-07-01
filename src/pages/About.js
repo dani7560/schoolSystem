@@ -1,68 +1,120 @@
 import React, { useState } from 'react'
-import ToggleElements from '../toggle';
+
 import './about.css'
 import{AiFillClockCircle} from 'react-icons/ai'
 
 const  About = () => {
- 
+  const [isShow,setIsShow]= useState(false);
+const [read,setRead]=useState(false);
+const ReadMore=()=>{
+  setRead(!read);
+}
+  const toggleSize = () => {
+    setIsShow(!isShow);
+  };
   return (<>
-    <div className='habout'> 
-    <h1 className='h1about'>
+    <div className='about' id='about'> 
+    <div className='container'>
+      <div className='schoolImg'>
+    <img src={
+  require('../images/school.png')} alt='' />
+  </div>
+      <div className='col-2'>
+
+
+
+    <p>
       about our school
-    </h1>
-   <h3>The christian brothers founded st.John Baptist de La Salle Catholic School in Addis Ababa and the Oromo Region.
-    </h3>
-    <button className='hbutton'>
-      READ MORE
+    </p>
+   <p>The christian brothers founded st.John Baptist de La Salle Catholic School in Addis Ababa and the Oromo Region.
+    </p>
+    <div>
+      {read && (<>is best school at this ceture</>)}
+    </div>
+    <button className='readButton' onClick={ReadMore}>
+      {read? 'Read less':'Read more'}
     </button>
+    
+    </div>
     </div>
   
     <div className='aboutevent'>
-      <h1>Recent Event</h1>
+      <p>Recent Event</p>
     
     <div className='eventLayout'>
       <div className='grideImage'><img src={require('../images/download (3).jpg')} alt=''/></div>
         {/*  */}
   
       <div className='eventTime'>
-        <div className='event'>
-          <div className='event1'>Event 1
+        <div className='eventRow1'>
+          <div className='event1'>Event one
             <div><AiFillClockCircle/></div>
             <div>Hall</div>
             
           </div>
-          <div className='event2'>Event 1
+          <div className='event2'>Event two
           <div><AiFillClockCircle/></div>
           <div>Hall</div>
           </div>
         </div>
-        <div className='event-'>
-          <div className='event3'>Event 1
+        <div className='eventRow2'>
+          <div className='event3'>Event three
           <div><AiFillClockCircle/></div>
           <div>Hall</div>
           </div>
-          <div className='event4'>Event 1
+          <div className='event4'>Event four
           <div><AiFillClockCircle/></div>
           <div>Hall</div>
           </div>
         </div>
+        <div>
+      
+      {isShow && (
+        <div className='lstEvent'>
+          {/* Elements to be shown when the button is clicked */}
+          <div className='eventRow1'>
+          <div className='event1'>Event one
+            <div><AiFillClockCircle/></div>
+            <div>Hall</div>
+            
+          </div>
+          <div className='event2'>Event two
+          <div><AiFillClockCircle/></div>
+          <div>Hall</div>
+          </div>
+        </div>
+          
+        </div>
+      )}
+      <button className='showBtn' onClick={toggleSize}>{isShow? 'show less': 'show all'}
+      </button>
+      </div>
         
       </div>
       
     </div>
     <div>
-     <h3 className='annualCalender'>Annual caledar</h3><button className='calanderBtn'>calander</button></div>
-     
-    </div>
 
-      <h1 className='schoolAct'>School Activity</h1>
+    </div>
+    
+    <div className='annualCalender'>
+     <div>Annual caledar</div>
+     <div>
+     <button className='calanderBtn'>calander</button>
+     </div>
+     </div>
+    
+    
+    </div>
+<div className='SchoolActivity'>
+      <h1>School Activity</h1>
       
       <div className='rowActivity'>
         <div className='columActivity1'>
-          <div>
-          <h2>ART CLUB</h2>
+          <div className='lstActivity'>
+          <p>ART CLUB</p>
           <div className='Club'>
-          <div>
+          <div className='schoolImg'>
           <img src={require('../images/art.png')} alt="" className='clubimage'/>
           </div>
           <div className='mv'>
@@ -79,7 +131,7 @@ const  About = () => {
           </div>
           </div>
           <div>
-          <h2>CHARITY CLUB</h2>
+          <p>CHARITY CLUB</p>
           <div className='Club'>
           <div>
           <img src={require('../images/charity.png')} alt="" className='clubimage'/>
@@ -92,8 +144,8 @@ const  About = () => {
             </div>
           </div>
           </div>
-          <div>
-          <h2>SPORT CLUB</h2>
+          <div className='lstActivity'>
+          <p>SPORT CLUB</p>
           <div className='Club'>
           <div>
           <img src={require('../images/sport.png')} alt="" className='clubimage'/>
@@ -106,8 +158,8 @@ const  About = () => {
             </div>
           </div>
           </div>
-          <div>
-          <h2>ICT CLUB</h2>
+          <div className='lstActivity'>
+          <p>ICT CLUB</p>
           <div className='Club'>
           <div>
           <img src={require('../images/ict.png')} alt="" className='clubimage'/>
@@ -128,8 +180,8 @@ const  About = () => {
           
           </div>
         <div className='columActivity2'>
-        <div>
-          <h2>MATH CLUB</h2>
+        <div className='lstActivity'>
+          <p>MATH CLUB</p>
           <div className='Club'>
           <div>
           <img src={require('../images/math.png')} alt="" className='clubimage'/>
@@ -142,8 +194,8 @@ const  About = () => {
             </div>
           </div>
           </div>
-          <div>
-          <h2>PSYCHOLOGY CLUB</h2>
+          <div className='lstActivity'>
+          <p>PSYCHOLOGY CLUB</p>
           <div className='Club'>
           <div>
           <img src={require('../images/psycholgy.png')} alt="" className='clubimage'/>
@@ -156,8 +208,8 @@ const  About = () => {
             </div>
           </div>
           </div>
-          <div>
-          <h2>CHAMISTRY CLUB</h2>
+          <div className='lstActivity'>
+          <p>CHAMISTRY CLUB</p>
           <div className='Club'>
           <div>
           <img src={require('../images/chemistry.png')} alt="" className='clubimage'/>
@@ -170,8 +222,8 @@ const  About = () => {
             </div>
           </div>
           </div>
-          <div>
-          <h2>LANGUAGE CLUB</h2>
+          <div className='lstActivity'>
+          <p>LANGUAGE CLUB</p>
           <div className='Club'>
           <div>
           <img src={require('../images/language.png')} alt="" className='clubimage'/>
@@ -184,8 +236,10 @@ const  About = () => {
             </div>
           </div>
           </div>
-          
-          </div></div>
+          </div>
+          </div>
+          </div>
+          </div>
       
 
   

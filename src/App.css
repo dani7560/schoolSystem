@@ -1,4 +1,57 @@
-* {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * {
     box-sizing: border-box;
   }
   
@@ -7,7 +60,9 @@
     margin: 0;
   }
   .container{
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .studtImage{
     transform: translate(30px,80px);
@@ -67,4 +122,4 @@
   
   
   
-  
+   */

@@ -1,8 +1,8 @@
 import React from 'react'
-
+import './dashboard.css'
 const DashBoard = () => {
   return (
-    <div>DashBoard page</div>
+    <div className='dashboard' id='dashboard' target ='_blank'>DashBoard page</div>
   )
 }
 
