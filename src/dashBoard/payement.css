@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+
+}
+.payement{
+    margin-top: 200px;
+    padding: 15rem;
+    position: relative;
+    z-index: 1;
+    background-color: chocolate;
+}

@@ -26,7 +26,6 @@
     max-width: 1240px; 
     margin: 0;
     height: 100%;
-    
     padding: 0 1rem;
 }
 
@@ -50,6 +49,7 @@
 }
 .header .nav-item a:hover {
   padding-bottom: 12px;
+  background-color: #ffffff;
   border-bottom: 3px solid var(--secondary-color);
 }
   .header .bars{

@@ -1,0 +1,23 @@
+.dashboard{
+     margin-top: 90px;
+    padding:0;
+    text-decoration: none;
+}
+.dashboardlay{
+    display: flex;
+
+}
+.dashboardhead{
+    width: 100%;
+}
+
+
+
+
+.username{
+margin-top: 200px;
+margin-left: 15rem;
+background-color: crimson;
+position: relative;
+z-index: 4;
+}

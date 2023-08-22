@@ -1,62 +1,38 @@
-import Navbar from "./Navbar";
-import './App.css'
-import React, { useRef } from 'react'
-import { Route,Routes } from "react-router-dom";
-import Home from './pages/Home'
-import  About from "./pages/About"
-import DashBoard from './pages/DashBoard'
-import Contact from './pages/Contact'
-import Gallery from './pages/Gallery'
-import DisplayTextPage from "./DisplayTextPage";
-
-
+import React from 'react';
+import './App.css';
+import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
+import Navbar from './Navbar';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Gallery from './pages/Gallery';
+import DashBoard from './pages/DashBoard';
+import UserName from './dashBoard/UserName';
+import Student from './dashBoard/Student';
+import Receipt from './dashBoard/Receipt';
+import Report from './dashBoard/Report';
+import Payment from './dashBoard/Payement';
 
 const App = () => {
-    // const home=useRef(null);
-    // const dashboard=useRef(null);
-    // const gallery=useRef(null);
-    // const about=useRef(null);
-    // const contact=useRef(null);
-    // const scrollToSection=(elementRef)=>{
-    //     window.scrollTo({top:elementRef.current.offsetTop,behavior:'smooth'})
-    // }
-  
-  return ( <>
-  <Navbar/>
-  <Home/>
-  <DashBoard/>
-  <Gallery/>
-  <About/>
-  <Contact/>
-  <DisplayTextPage/>
-    
-      
-      {/* <img src= {log} alt=""className="logImage"/> */}
-    
-    {/* <div className="container">
+  return (
+    <Router>
+      <Navbar/>
       <Routes>
-        <Route path="/" element={<Home />} ref=''/>
-        <Route path="/dashboard" element={<DashBoard />} />
-        
-        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/dashboard" element={<DashBoard/>}/>
+        <Route path="/dashboard/*" >
+          <Route path="username" element={<UserName />} />
+          <Route path="student" element={<Student />} />
+          <Route path="receipt" element={<Receipt />} />
+          <Route path="report" element={<Report />} />
+          <Route path="payment" element={<Payment />} />
+        </Route>
       </Routes>
-    
-   </div>
-    <Home/>
-    <DashBoard/>
-  <Gallery/>
-  <About/>
-  <Contact/>
-       */}
-  
-  
-  
-  </>
-     
-  )
-}
+    </Router>
+  );
+};
 
-
-export default App
+export default App;

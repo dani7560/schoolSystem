@@ -1,10 +1,14 @@
 import React from 'react';
 
 import './home.css'; // Import the custom CSS file
+import Contact from './Contact';
+import Gallery from './Gallery';
+import About from './About';
 
 const Home = () => {
+
   const handleClick = () => {
-    window.location.href = '#dashboard';
+    window.location.href = '#dashboard' ;
   };
   return (
     <>
@@ -49,6 +53,9 @@ const Home = () => {
           </div> 
         </div> 
       </div>
+      <About/>
+      <Gallery/>
+      <Contact/>
     </>
   );
 }
