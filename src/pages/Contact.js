@@ -1,8 +1,7 @@
 import React,{ useState } from 'react'
 import './contact.css'
-import ScrollToLink from '../Scroll'
-import DisplayTextPage from '../DisplayTextPage'
-import { useHistory } from 'react-router-dom'
+
+
 
 
 const Contact = () => {
@@ -71,11 +70,11 @@ const Contact = () => {
             <p>11111</p>
           </button></div>
       </div>
-      <ScrollToLink/>
+      
 
     </div>
     </div>
-    <DisplayTextPage blogs={text}/>
+    
     </>
     
   )

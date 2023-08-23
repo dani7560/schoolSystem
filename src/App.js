@@ -11,7 +11,8 @@ import UserName from './dashBoard/UserName';
 import Student from './dashBoard/Student';
 import Receipt from './dashBoard/Receipt';
 import Report from './dashBoard/Report';
-import Payment from './dashBoard/Payement';
+import Payement from './dashBoard/Payement';
+
 
 const App = () => {
   return (
@@ -28,7 +29,7 @@ const App = () => {
           <Route path="student" element={<Student />} />
           <Route path="receipt" element={<Receipt />} />
           <Route path="report" element={<Report />} />
-          <Route path="payment" element={<Payment />} />
+          <Route path="payement" element={<Payement/>} />
         </Route>
       </Routes>
     </Router>
